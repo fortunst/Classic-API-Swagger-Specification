@@ -22212,3 +22212,6 @@ definitions:
           $ref: '#/definitions/size'
         webhook:
           $ref: '#/definitions/id_name'
+securityDefinitions:
+  basicAuth:
+    type: basic
