@@ -20499,6 +20499,16 @@ definitions:
           frequency:
             type: string
             enum: [Once per computer, Once per user per computer, Once per user, Once every day, Once every week, Once every month, Ongoing]
+          retry_event:
+            type: string
+            enum: [none, trigger, check-in]
+            default: none
+          retry_attempts:
+            type: integer
+            default: -1
+          notify_on_each_failed_retry:
+            type: boolean
+            default: false
           location_user_only:
             type: boolean
           target_drive:
