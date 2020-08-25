@@ -18301,6 +18301,11 @@ definitions:
             description: Name of the configuration profile
           description:
             type: string
+          level:
+            type: string
+            enum: [System, User]
+            description: Level of the configuration profile
+            default: System
           site:
             $ref: '#/definitions/site_object'
           category:
