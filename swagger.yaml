@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: '10.26.0'
+  version: '10.25.0'
   title: Classic API
   license:
     name: Jamf API License Agreement
@@ -5648,7 +5648,7 @@ paths:
         name: body
         required: true
         schema:
-          $ref: '#/definitions/json_web_token_configuration_put'
+          $ref: '#/definitions/json_web_token_configuration'
       responses:
         '201':
           description: Created
@@ -16367,24 +16367,6 @@ definitions:
               type: string
               example: Create Provisioning Profiles
   json_web_token_configuration:
-    type: object
-    properties:
-      id:
-        type: integer
-        example: 1
-      token_expiry:
-        type: integer
-        default: 5
-      name:
-        type: string
-        example: JSON Token Name
-      disabled:
-        type: boolean
-        default: false
-    required:
-      - name
-      - encryption_key
-  json_web_token_configuration_put:
     type: object
     properties:
       id:
