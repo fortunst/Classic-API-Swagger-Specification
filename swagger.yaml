@@ -14,9 +14,6 @@ consumes:
   - application/xml
 produces:
   - application/xml
-security:
-  - basicAuth: []
-  - x-default: apigee
 paths:
   "/accounts":
     get:
@@ -22247,3 +22244,4 @@ definitions:
 securityDefinitions:
   basicAuth:
     type: basic
+    x-default: apigee
