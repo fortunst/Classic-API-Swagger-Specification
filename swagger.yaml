@@ -32,6 +32,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/accounts'
+      x-explorer-enabled: false
   "/accounts/groupid/{id}":
     get:
       tags:
@@ -52,6 +53,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/group'
+      x-explorer-enabled: false
     put:
       tags:
       - accounts
@@ -72,6 +74,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     post:
       tags:
       - accounts
@@ -94,6 +97,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -108,6 +112,7 @@ paths:
       responses:
         '200':
           description: OK
+      x-explorer-enabled: false
   "/accounts/groupname/{name}":
     get:
       tags:
@@ -128,6 +133,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/group'
+      x-explorer-enabled: false
     put:
       tags:
       - accounts
@@ -148,6 +154,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -162,6 +169,7 @@ paths:
       responses:
         '200':
           description: OK
+      x-explorer-enabled: false
   "/accounts/userid/{id}":
     get:
       tags:
@@ -182,6 +190,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/account'
+      x-explorer-enabled: false
     put:
       tags:
       - accounts
@@ -201,6 +210,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     post:
       tags:
       - accounts
@@ -222,6 +232,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -236,6 +247,7 @@ paths:
       responses:
         '200':
           description: OK
+      x-explorer-enabled: false
   "/accounts/username/{name}":
     get:
       tags:
@@ -256,6 +268,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/account'
+      x-explorer-enabled: false
     put:
       tags:
       - accounts
@@ -275,6 +288,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -289,6 +303,7 @@ paths:
       responses:
         '200':
           description: OK
+      x-explorer-enabled: false
   "/activationcode":
     get:
       tags:
@@ -22229,4 +22244,3 @@ definitions:
 securityDefinitions:
   basicAuth:
     type: basic
-    x-default: apigee
