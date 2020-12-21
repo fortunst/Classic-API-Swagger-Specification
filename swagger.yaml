@@ -15,7 +15,7 @@ consumes:
 produces:
   - application/xml
 security:
-  - basicAuth
+  - basicAuth: []
 paths:
   "/accounts":
     get:
