@@ -22246,4 +22246,4 @@ definitions:
 securityDefinitions:
   basicAuth:
     type: basic
-    x-example: apigee
+    x-default: apigee
