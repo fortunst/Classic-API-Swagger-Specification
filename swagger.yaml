@@ -16,6 +16,7 @@ produces:
   - application/xml
 security:
   - basicAuth: []
+  - x-default: apigee
 paths:
   "/accounts":
     get:
@@ -319,6 +320,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/activation_code'
+      x-explorer-enabled: false
     put:
       tags:
       - activationcode
@@ -333,6 +335,7 @@ paths:
       responses:
         '201':
           description: Created
+      x-explorer-enabled: false
   "/advancedcomputersearches":
     get:
       tags:
