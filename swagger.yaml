@@ -15528,6 +15528,9 @@ definitions:
       is_master:
         type: boolean
         description: Only one share can be set as master
+      failover_point:
+        type: string
+        description: Name of a file distribution point or "Cloud Distribution Point" to use as failover.
       enable_load_balancing:
         type: boolean
         default: false
