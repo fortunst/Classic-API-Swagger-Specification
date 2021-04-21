@@ -13377,7 +13377,6 @@ definitions:
     required:
     - name
   class_post:
-      x-explorer-enabled: false
     title: class
     xml:
       name: class
