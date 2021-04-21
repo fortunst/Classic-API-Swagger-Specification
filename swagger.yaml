@@ -98,7 +98,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -234,7 +233,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
