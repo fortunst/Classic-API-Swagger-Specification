@@ -13628,7 +13628,6 @@ definitions:
                 type: string
                 example: C02Q7KHTGFWF
   computer_command_post:
-      x-explorer-enabled: false
     xml:
       name: computer_command
     type: object
@@ -13811,7 +13810,6 @@ definitions:
         required:
           - name
   computer_configuration_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: computer_configuration
@@ -13977,7 +13975,6 @@ definitions:
                   type: string
                   example: C02Q7KHTGFWF
   computer_group_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: computer_group
@@ -14869,7 +14866,6 @@ definitions:
             type: string
             example: 1499470624555
   computer_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: computer
@@ -15707,7 +15703,6 @@ definitions:
       - read_only_username
       - read_write_username
   distribution_point_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: distribution_point
@@ -16186,7 +16181,6 @@ definitions:
           notification_message:
             type: string
   ebook_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: ebook
@@ -16779,7 +16773,6 @@ definitions:
               user_group_membership_use_ldap_compare:
                 type: boolean
   ldap_server_post:
-      x-explorer-enabled: false
     type: object
     properties:
       connection:
@@ -17468,7 +17461,6 @@ definitions:
         required:
           - name
   managed_preference_profile_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: managed_preference_profile
@@ -17862,7 +17854,6 @@ definitions:
               type: string
               example: Sample Value
   mobile_device_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: mobile_device
@@ -18320,7 +18311,6 @@ definitions:
             internal_app:
               type: boolean
   mobile_device_command_post:
-      x-explorer-enabled: false
     xml: 
       name: mobile_device_command
     type: object
@@ -18824,7 +18814,6 @@ definitions:
             attachment:
               $ref: '#/definitions/attachment'
   mobile_device_enrollment_profile_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: mobile_device_enrollment_profile
@@ -19347,7 +19336,6 @@ definitions:
       site:
         $ref: '#/definitions/site_object'
   mobile_device_invitation_post:
-      x-explorer-enabled: false
     type: object
     properties:
       id:
@@ -19594,7 +19582,6 @@ definitions:
       - name
       - ip_address
   netboot_server_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: netboot_server
@@ -19671,7 +19658,6 @@ definitions:
       - starting_address
       - ending_address
   network_segment_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: network_segment
@@ -20553,7 +20539,6 @@ definitions:
             attachment:
               $ref: '#/definitions/attachment'
   peripheral_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: peripheral
@@ -21283,7 +21268,6 @@ definitions:
             example: 1
             description: disk encryption ID to utilize for remediating institutional recovery key types.
   policy_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: policy
@@ -22026,7 +22010,6 @@ definitions:
     required:
       - name
   user_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: user
@@ -22229,7 +22212,6 @@ definitions:
                     user_group:
                       $ref: '#/definitions/id_name'
   vpp_assignment_post:
-      x-explorer-enabled: false
     type: object
     xml:
       name: vpp_assignment
