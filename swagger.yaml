@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: '10.27.0'
+  version: '10.29.0'
   title: Classic API
   license:
     name: Jamf API License Agreement
@@ -32,7 +32,6 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/accounts'
-      x-explorer-enabled: false
   "/accounts/groupid/{id}":
     get:
       tags:
@@ -53,8 +52,8 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/group'
-      x-explorer-enabled: false
     put:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Updates an existing group by ID
@@ -74,8 +73,8 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     post:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Creates a new group by ID
@@ -97,7 +96,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -112,7 +110,6 @@ paths:
       responses:
         '200':
           description: OK
-      x-explorer-enabled: false
   "/accounts/groupname/{name}":
     get:
       tags:
@@ -133,8 +130,8 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/group'
-      x-explorer-enabled: false
     put:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Updates an existing group by name
@@ -154,7 +151,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -169,7 +165,6 @@ paths:
       responses:
         '200':
           description: OK
-      x-explorer-enabled: false
   "/accounts/userid/{id}":
     get:
       tags:
@@ -190,8 +185,8 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/account'
-      x-explorer-enabled: false
     put:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Updates an existing account by ID
@@ -210,8 +205,8 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     post:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Creates a new account by ID
@@ -232,7 +227,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -247,7 +241,6 @@ paths:
       responses:
         '200':
           description: OK
-      x-explorer-enabled: false
   "/accounts/username/{name}":
     get:
       tags:
@@ -268,8 +261,8 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/account'
-      x-explorer-enabled: false
     put:
+      x-explorer-enabled: true
       tags:
       - accounts
       summary: Updates an existing account by name
@@ -288,7 +281,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
     delete:
       tags:
       - accounts
@@ -303,7 +295,6 @@ paths:
       responses:
         '200':
           description: OK
-      x-explorer-enabled: false
   "/activationcode":
     get:
       tags:
@@ -319,8 +310,8 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/activation_code'
-      x-explorer-enabled: false
     put:
+      x-explorer-enabled: true
       tags:
       - activationcode
       summary: Updates the Jamf Pro activation code
@@ -334,7 +325,6 @@ paths:
       responses:
         '201':
           description: Created
-      x-explorer-enabled: false
   "/advancedcomputersearches":
     get:
       tags:
@@ -373,6 +363,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_computer_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedcomputersearches
       summary: Updates an existing advanced computer search by ID
@@ -392,6 +383,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - advancedcomputersearches
       summary: Creates a new advanced computer search
@@ -447,6 +439,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_computer_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedcomputersearches
       summary: Updates an existing advanced computer search by name
@@ -515,6 +508,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_mobile_device_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedmobiledevicesearches
       summary: Updates an existing advanced mobile device search by ID
@@ -534,6 +528,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - advancedmobiledevicesearches
       summary: Creates a new advanced mobile device search
@@ -589,6 +584,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_mobile_device_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedmobiledevicesearches
       summary: Updates an existing advanced mobile device search by name
@@ -657,6 +653,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_user_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedusersearches
       summary: Updates an existing advanced user search by ID
@@ -676,6 +673,7 @@ paths:
         '200':
           description: OK
     post:
+      x-explorer-enabled: true
       tags:
       - advancedusersearches
       summary: Creates a new advanced user search by ID
@@ -731,6 +729,7 @@ paths:
           schema:
             $ref: '#/definitions/advanced_user_search'
     put:
+      x-explorer-enabled: true
       tags:
       - advancedusersearches
       summary: Updates an existing advanced user search by name
@@ -799,6 +798,7 @@ paths:
           schema:
             $ref: '#/definitions/allowed_file_extension'
     post:
+      x-explorer-enabled: true
       tags:
       - allowedfileextensions
       summary: Creates a new allowed file extension value by ID
@@ -889,6 +889,7 @@ paths:
           schema:
             $ref: '#/definitions/building'
     put:
+      x-explorer-enabled: true
       tags:
       - buildings
       summary: Updates an existing building by ID
@@ -908,6 +909,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - buildings
       summary: Creates a new building
@@ -963,6 +965,7 @@ paths:
           schema:
             $ref: '#/definitions/building'
     put:
+      x-explorer-enabled: true
       tags:
       - buildings
       summary: Updates an existing building by name
@@ -1031,6 +1034,7 @@ paths:
           schema:
             $ref: '#/definitions/byoprofile'
     put:
+      x-explorer-enabled: true
       tags:
       - byoprofiles
       summary: Updates a personal device profile by ID
@@ -1050,6 +1054,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - byoprofiles
       summary: Creates a personal device profile by ID
@@ -1104,6 +1109,7 @@ paths:
           schema:
             $ref: '#/definitions/byoprofile'
     put:
+      x-explorer-enabled: true
       tags:
       - byoprofiles
       summary: Updates a personal device profile by name
@@ -1173,6 +1179,7 @@ paths:
           schema:
             $ref: '#/definitions/category'
     put:
+      x-explorer-enabled: true
       tags:
       - categories
       summary: Updates an existing category by ID
@@ -1192,6 +1199,7 @@ paths:
         '200':
           description: OK
     post:
+      x-explorer-enabled: true
       tags:
       - categories
       summary: Creates a new category by ID
@@ -1247,6 +1255,7 @@ paths:
           schema:
             $ref: '#/definitions/category'
     put:
+      x-explorer-enabled: true
       tags:
       - categories
       summary: Updates an existing category by name
@@ -1315,6 +1324,7 @@ paths:
           schema:
             $ref: '#/definitions/class'
     put:
+      x-explorer-enabled: true
       tags:
       - classes
       summary: Updates an existing class by ID
@@ -1335,6 +1345,7 @@ paths:
         200:
           description: OK
     post:
+      x-explorer-enabled: true
       tags:
       - classes
       summary: Creates a new class by ID
@@ -1391,6 +1402,7 @@ paths:
           schema:
             $ref: '#/definitions/class'
     put:
+      x-explorer-enabled: true
       tags:
       - classes
       summary: Updates an existing class by name
@@ -1736,6 +1748,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_check_in'
     put:
+      x-explorer-enabled: true
       tags:
       - computercheckin
       summary: Updates the Jamf Pro computer checkin information
@@ -1806,6 +1819,7 @@ paths:
             $ref: '#/definitions/computer_command'
   "/computercommands/command/{command}":
     post:
+      x-explorer-enabled: true
       tags:
       - computercommands
       summary: Creates a new computer command using command name
@@ -1841,6 +1855,7 @@ paths:
           description: Created
   "/computercommands/command/{command}/id/{id}":
     post:
+      x-explorer-enabled: true
       tags:
       - computercommands
       summary: Creates a new computer command using command name and device IDs
@@ -1869,6 +1884,7 @@ paths:
           description: Created
   "/computercommands/command/{command}/action/{action}/id/{id}":
     post:
+      x-explorer-enabled: true
       tags:
       - computercommands
       summary: "Creates a new computer command with a command specific action. Commands supported: ScheduleOSUpdate"
@@ -1898,6 +1914,7 @@ paths:
           description: Created
   "/computercommands/command/{command}/passcode/{passcode}/id/{id}":
     post:
+      x-explorer-enabled: true
       tags:
       - computercommands
       summary: Creates a new computer command using command name and device IDs
@@ -1961,6 +1978,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_configuration'
     put:
+      x-explorer-enabled: true
       tags:
       - computerconfigurations
       summary: Updates an existing computer configuration by ID
@@ -1981,6 +1999,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - computerconfigurations
       summary: Creates a new computer configuration by ID
@@ -2037,6 +2056,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_configuration'
     put:
+      x-explorer-enabled: true
       tags:
       - computerconfigurations
       summary: Updates an existing computer configuration by name
@@ -2106,6 +2126,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - computerextensionattributes
       summary: Updates an existing computer extension attribute by ID
@@ -2125,6 +2146,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - computerextensionattributes
       summary: Creates a new computer extension attribute by ID
@@ -2180,6 +2202,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - computerextensionattributes
       summary: Updates an existing computer extension attribute by name
@@ -2248,6 +2271,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_group'
     put:
+      x-explorer-enabled: true
       tags:
       - computergroups
       summary: Updates an existing computer group by ID
@@ -2268,6 +2292,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - computergroups
       summary: Creates a new computer group by ID
@@ -2323,6 +2348,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_group'
     put:
+      x-explorer-enabled: true
       tags:
       - computergroups
       summary: Updates an existing computer group by name
@@ -2962,6 +2988,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_inventory_collection'
     put:
+      x-explorer-enabled: true
       tags:
       - computerinventorycollection
       summary: Updates the Jamf Pro computer inventory collection information
@@ -3011,6 +3038,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_invitation'
     post:
+      x-explorer-enabled: true
       tags:
       - computerinvitations
       summary: Creates a new computer invitation by id
@@ -3065,6 +3093,7 @@ paths:
           schema:
             $ref: '#/definitions/computer_invitation'
     post:
+      x-explorer-enabled: true
       tags:
       - computerinvitations
       summary: Creates a new computer invitation by invitation
@@ -3889,6 +3918,7 @@ paths:
           schema:
             $ref: '#/definitions/computer'
     put:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Updates an existing computer by ID
@@ -3909,6 +3939,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Creates a computer
@@ -3989,6 +4020,7 @@ paths:
           schema:
             $ref: '#/definitions/computer'
     put:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Updates an existing computer by name
@@ -4070,6 +4102,7 @@ paths:
           schema:
             $ref: '#/definitions/computer'
     put:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Updates an existing computer by UDID
@@ -4151,6 +4184,7 @@ paths:
           schema:
             $ref: '#/definitions/computer'
     put:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Updates an existing computer by serial number
@@ -4232,6 +4266,7 @@ paths:
           schema:
             $ref: '#/definitions/computer'
     put:
+      x-explorer-enabled: true
       tags:
       - computers
       summary: Updates an existing computer by MAC address
@@ -4345,6 +4380,7 @@ paths:
           schema:
             $ref: '#/definitions/department'
     put:
+      x-explorer-enabled: true
       tags:
       - departments
       summary: Updates an existing department by ID
@@ -4364,6 +4400,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - departments
       summary: Creates a new department by ID
@@ -4417,6 +4454,7 @@ paths:
         '200':
           description: OK
     put:
+      x-explorer-enabled: true
       tags:
       - departments
       summary: Updates an existing department by name
@@ -4485,6 +4523,7 @@ paths:
           schema:
             $ref: '#/definitions/directory_binding'
     put:
+      x-explorer-enabled: true
       tags:
       - directorybindings
       summary: Updates an existing directory binding by ID
@@ -4504,6 +4543,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - directorybindings
       summary: Creates a new directory binding by ID
@@ -4558,6 +4598,7 @@ paths:
           schema:
             $ref: '#/definitions/directory_binding'
     put:
+      x-explorer-enabled: true
       tags:
       - directorybindings
       summary: Updates an existing directory binding by name
@@ -4626,6 +4667,7 @@ paths:
           schema:
             $ref: '#/definitions/disk_encryption_configuration'
     put:
+      x-explorer-enabled: true
       tags:
       - diskencryptionconfigurations
       summary: Updates an existing disk encryption configuration by ID
@@ -4645,6 +4687,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - diskencryptionconfigurations
       summary: Creates a new disk encryption configuration by ID
@@ -4699,6 +4742,7 @@ paths:
           schema:
             $ref: '#/definitions/disk_encryption_configuration'
     put:
+      x-explorer-enabled: true
       tags:
       - diskencryptionconfigurations
       summary: Updates an existing disk encryption configuration by name
@@ -4767,6 +4811,7 @@ paths:
           schema:
             $ref: '#/definitions/distribution_point'
     put:
+      x-explorer-enabled: true
       tags:
       - distributionpoints
       summary: Updates an existing distribution point by ID
@@ -4786,6 +4831,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - distributionpoints
       summary: Creates a new distribution point by ID
@@ -4841,6 +4887,7 @@ paths:
           schema:
             $ref: '#/definitions/distribution_point'
     put:
+      x-explorer-enabled: true
       tags:
       - distributionpoints
       summary: Updates an existing distribution point by name
@@ -4909,6 +4956,7 @@ paths:
           schema:
             $ref: '#/definitions/dock_item'
     put:
+      x-explorer-enabled: true
       tags:
       - dockitems
       summary: Updates an existing dock item by ID
@@ -4928,6 +4976,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - dockitems
       summary: Creates a new dock item by ID
@@ -4983,6 +5032,7 @@ paths:
           schema:
             $ref: '#/definitions/dock_item'
     put:
+      x-explorer-enabled: true
       tags:
       - dockitems
       summary: Updates an existing dock item by name
@@ -5051,6 +5101,7 @@ paths:
           schema:
             $ref: '#/definitions/ebook'
     put:
+      x-explorer-enabled: true
       tags:
       - ebooks
       summary: Updates an existing ebook by ID
@@ -5070,6 +5121,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - ebooks
       summary: Creates a new ebook by ID
@@ -5150,6 +5202,7 @@ paths:
           schema:
             $ref: '#/definitions/ebook'
     put:
+      x-explorer-enabled: true
       tags:
       - ebooks
       summary: Updates an existing ebook by name
@@ -5211,6 +5264,7 @@ paths:
             $ref: '#/definitions/ebook'
   "/fileuploads/{resource}/{idType}/{id}":
     post:
+      x-explorer-enabled: true
       tags:
       - fileuploads
       summary: Creates file attachments in Jamf Pro
@@ -5257,6 +5311,7 @@ paths:
           schema:
             $ref: '#/definitions/gsx_connection'
     put:
+      x-explorer-enabled: true
       tags:
       - gsxconnection
       summary: Updates the Jamf Pro GSX connection information
@@ -5306,6 +5361,7 @@ paths:
           schema:
             $ref: '#/definitions/healthcare_listener'
     put:
+      x-explorer-enabled: true
       tags:
       - healthcarelistener
       summary: Updates an existing healthcare listener by ID
@@ -5360,6 +5416,7 @@ paths:
           schema:
             $ref: '#/definitions/healthcare_listener_rule'
     put:
+      x-explorer-enabled: true
       tags:
       - healthcarelistenerrule
       summary: Updates an existing Healthcare Listener rule by ID
@@ -5381,6 +5438,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - healthcarelistenerrule
       summary: Creates a new Healthcare Listener rule
@@ -5438,6 +5496,7 @@ paths:
           schema:
             $ref: '#/definitions/ibeacon'
     put:
+      x-explorer-enabled: true
       tags:
       - ibeacons
       summary: Updates an existing iBeacon region by ID
@@ -5457,6 +5516,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - ibeacons
       summary: Creates a new iBeacon region by ID
@@ -5512,6 +5572,7 @@ paths:
           schema:
             $ref: '#/definitions/ibeacon'
     put:
+      x-explorer-enabled: true
       tags:
       - ibeacons
       summary: Updates an existing iBeacon region by name
@@ -5580,6 +5641,7 @@ paths:
           schema:
             $ref: '#/definitions/infrastructure_manager'
     put:
+      x-explorer-enabled: true
       tags:
       - infrastructuremanager
       summary: Updates an existing infrastructure manager by ID
@@ -5651,6 +5713,7 @@ paths:
           schema:
             $ref: '#/definitions/json_web_token_configuration'
     put:
+      x-explorer-enabled: true
       tags:
       - jsonwebtokenconfigurations
       summary: Updates an existing JSON Web Token configuration by ID
@@ -5672,6 +5735,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - jsonwebtokenconfigurations
       summary: Creates a new JSON Web Token configuration by ID
@@ -5740,6 +5804,7 @@ paths:
           schema:
             $ref: '#/definitions/ldap_server'
     put:
+      x-explorer-enabled: true
       tags:
       - ldapservers
       summary: Updates an existing LDAP server by ID
@@ -5759,6 +5824,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - ldapservers
       summary: Creates a new LDAP server by ID
@@ -5889,6 +5955,7 @@ paths:
         '200':
           description: OK
     put:
+      x-explorer-enabled: true
       tags:
       - ldapservers
       summary: Updates an existing LDAP server by name
@@ -6034,6 +6101,7 @@ paths:
           schema:
             $ref: '#/definitions/licensed_software'
     put:
+      x-explorer-enabled: true
       tags:
       - licensedsoftware
       summary: Updates existing licensed software by ID
@@ -6054,6 +6122,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - licensedsoftware
       summary: Creates new licensed software by ID
@@ -6110,6 +6179,7 @@ paths:
           schema:
             $ref: '#/definitions/licensed_software'
     put:
+      x-explorer-enabled: true
       tags:
       - licensedsoftware
       summary: Updates an existing licensed software by name
@@ -6241,6 +6311,7 @@ paths:
           schema:
             $ref: '#/definitions/mac_application'
     put:
+      x-explorer-enabled: true
       tags:
       - macapplications
       summary: Updates an existing mac application by ID
@@ -6261,6 +6332,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - macapplications
       summary: Creates a new mac application by ID
@@ -6341,6 +6413,7 @@ paths:
           schema:
             $ref: '#/definitions/mac_application'
     put:
+      x-explorer-enabled: true
       tags:
       - macapplications
       summary: Updates an existing mac application by name
@@ -6437,6 +6510,7 @@ paths:
           schema:
             $ref: '#/definitions/managed_preference_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - managedpreferenceprofiles
       summary: Updates an existing managed preference profiles by ID
@@ -6456,6 +6530,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - managedpreferenceprofiles
       summary: Creates a new managed preference profile by ID
@@ -6535,6 +6610,7 @@ paths:
           schema:
             $ref: '#/definitions/managed_preference_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - managedpreferenceprofiles
       summary: Updates an existing managed preference profiles by name
@@ -6630,6 +6706,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_application'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceapplications
       summary: Updates an existing mobile device application by ID
@@ -6650,6 +6727,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceapplications
       summary: Creates a new mobile device application by ID
@@ -6706,6 +6784,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_application'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceapplications
       summary: Updates an existing mobile device application by bundle ID
@@ -6764,6 +6843,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_application'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceapplications
       summary: Updates an existing mobile device application by bundle ID and version
@@ -6852,6 +6932,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_application'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceapplications
       summary: Updates an existing mobile device application by name
@@ -6988,6 +7069,7 @@ paths:
             $ref: '#/definitions/mobile_device_command'
   "/mobiledevicecommands/command":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Creates a new mobile device command
@@ -7032,6 +7114,7 @@ paths:
           description: Created
   "/mobiledevicecommands/command/{command}/id/{id_list}":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Creates a new mobile device command
@@ -7072,6 +7155,7 @@ paths:
           description: Created
   "/mobiledevicecommands/command/DeviceName/{device_name}/id/{id_list}":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Creates a new command to set the name of a mobile device.
@@ -7092,6 +7176,7 @@ paths:
           description: Created
   "/mobiledevicecommands/command/DeviceLock/{lock_message}/id/{id_list}":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Sends a new lock command to a list of mobile devices
@@ -7112,6 +7197,7 @@ paths:
           description: Created
   "/mobiledevicecommands/command/ScheduleOSUpdate/{install_action}/id/{id_list}":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Creates a new command to request that a mobile device update its OS. Command and mobile device list specified in URL. Device will be updated to the latest OS version based on device eligibility.
@@ -7133,6 +7219,7 @@ paths:
           description: Created
   "/mobiledevicecommands/command/ScheduleOSUpdate/{install_action}/{product_version}/id/{id_list}":
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicecommands
       summary: Creates a new command to request that a mobile device update its OS. Command and mobile device list specified in URL. Mixing iOS and tvOS devices in ID list is not advised, as product version is specific to OS type.
@@ -7193,6 +7280,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_configuration_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceconfigurationprofiles
       summary: Updates an existing mobile device configuration profile by ID
@@ -7212,6 +7300,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceconfigurationprofiles
       summary: Creates a new mobile device configuration profile by ID
@@ -7291,6 +7380,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_configuration_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceconfigurationprofiles
       summary: Updates an existing mobile device configuration profile by name
@@ -7386,6 +7476,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_enrollment_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceenrollmentprofiles
       summary: Updates an existing mobile device enrollment profile by ID
@@ -7405,6 +7496,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceenrollmentprofiles
       summary: Creates a new mobile device enrollment profile by ID
@@ -7459,6 +7551,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_enrollment_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceenrollmentprofiles
       summary: Updates an existing mobile device enrollment profile by invitation
@@ -7537,6 +7630,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_enrollment_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceenrollmentprofiles
       summary: Updates an existing mobile device enrollment profile by name
@@ -7632,6 +7726,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceextensionattributes
       summary: Updates an existing mobile device extension attribute by ID
@@ -7651,6 +7746,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceextensionattributes
       summary: Creates a new mobile device extension attribute by ID
@@ -7705,6 +7801,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceextensionattributes
       summary: Updates an existing mobile device extension attribute by name
@@ -7773,6 +7870,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_group'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevicegroups
       summary: Updates an existing mobile device group by ID
@@ -7793,6 +7891,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevicegroups
       summary: Creates a new mobile device group by ID
@@ -7847,6 +7946,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_group'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevicegroups
       summary: Updates an existing mobile device group by name
@@ -8149,6 +8249,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_invitation'
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceinvitations
       summary: Creates a new mobile device invitation by id
@@ -8203,6 +8304,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_invitation'
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceinvitations
       summary: Creates a new mobile device invitation by invitation
@@ -8272,6 +8374,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Updates an existing mobile device provisioning profiles by id
@@ -8291,6 +8394,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Creates a mobile device provisioning profiles by id
@@ -8346,6 +8450,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Updates an existing mobile device provisioning profiles by name
@@ -8365,6 +8470,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Creates a mobile device provisioning profiles by name
@@ -8420,6 +8526,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Updates an existing mobile device provisioning profiles by uuid
@@ -8439,6 +8546,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device_provisioning_profile'
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledeviceprovisioningprofiles
       summary: Creates a mobile device provisioning profiles by uuid
@@ -8531,6 +8639,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Updates an existing mobile device by ID
@@ -8551,6 +8660,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Creates a new mobile device by ID
@@ -8631,6 +8741,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Updates an existing mobile device by name
@@ -8712,6 +8823,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Updates an existing mobile device by UDID
@@ -8793,6 +8905,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Updates an existing mobile device by serial number
@@ -8874,6 +8987,7 @@ paths:
           schema:
             $ref: '#/definitions/mobile_device'
     put:
+      x-explorer-enabled: true
       tags:
       - mobiledevices
       summary: Updates an existing mobile device by Mac address
@@ -8970,6 +9084,7 @@ paths:
           schema:
             $ref: '#/definitions/netboot_server'
     put:
+      x-explorer-enabled: true
       tags:
       - netbootservers
       summary: Updates an existing netboot server by ID
@@ -8989,6 +9104,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - netbootservers
       summary: Creates a new netboot server by ID
@@ -9043,6 +9159,7 @@ paths:
           schema:
             $ref: '#/definitions/netboot_server'
     put:
+      x-explorer-enabled: true
       tags:
       - netbootservers
       summary: Updates an existing netboot server by name
@@ -9111,6 +9228,7 @@ paths:
           schema:
             $ref: '#/definitions/network_segment'
     put:
+      x-explorer-enabled: true
       tags:
       - networksegments
       summary: Updates an existing network segment by ID
@@ -9130,6 +9248,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - networksegments
       summary: Creates a new network segment by ID
@@ -9184,6 +9303,7 @@ paths:
           schema:
             $ref: '#/definitions/network_segment'
     put:
+      x-explorer-enabled: true
       tags:
       - networksegments
       summary: Updates an existing network segment by name
@@ -9252,6 +9372,7 @@ paths:
           schema:
             $ref: '#/definitions/os_x_configuration_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - osxconfigurationprofiles
       summary: Updates an existing OS X configuration profile by ID
@@ -9271,6 +9392,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - osxconfigurationprofiles
       summary: Creates a new OS X configuration profile by ID
@@ -9350,6 +9472,7 @@ paths:
           schema:
             $ref: '#/definitions/os_x_configuration_profile'
     put:
+      x-explorer-enabled: true
       tags:
       - osxconfigurationprofiles
       summary: Updates an existing OS X configuration profile by name
@@ -9445,6 +9568,7 @@ paths:
           schema:
             $ref: '#/definitions/package'
     put:
+      x-explorer-enabled: true
       tags:
       - packages
       summary: Updates an existing package by ID
@@ -9464,6 +9588,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - packages
       summary: Creates a new package by ID
@@ -9518,6 +9643,7 @@ paths:
           schema:
             $ref: '#/definitions/package'
     put:
+      x-explorer-enabled: true
       tags:
       - packages
       summary: Updates an existing package by name
@@ -9608,6 +9734,7 @@ paths:
           schema:
             $ref: '#/definitions/software_title'
     put:
+      x-explorer-enabled: true
       deprecated: true
       tags:
       - patches
@@ -9629,6 +9756,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       deprecated: true
       tags:
       - patches
@@ -9711,6 +9839,7 @@ paths:
           schema:
             $ref: '#/definitions/software_title'
     put:
+      x-explorer-enabled: true
       deprecated: true
       tags:
       - patches
@@ -9807,6 +9936,7 @@ paths:
           schema:
             $ref: '#/definitions/patch_external_source'
     put:
+      x-explorer-enabled: true
       tags:
       - patchexternalsources
       summary: Updates a patch external source by ID
@@ -9828,6 +9958,7 @@ paths:
         '200':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - patchexternalsources
       summary: Create a new patch external source by ID
@@ -9886,6 +10017,7 @@ paths:
           schema:
             $ref: '#/definitions/patch_external_source'
     put:
+      x-explorer-enabled: true
       tags:
       - patchexternalsources
       summary: Updates a patch external source by ID
@@ -9907,6 +10039,7 @@ paths:
         '200':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - patchexternalsources
       summary: Create a new patch external source by ID
@@ -10017,6 +10150,7 @@ paths:
           schema:
             $ref: '#/definitions/patch_policy'
     put:
+      x-explorer-enabled: true
       tags:
       - patchpolicies
       summary: Updates an existing patch policy by ID
@@ -10097,6 +10231,7 @@ paths:
           schema:
             $ref: '#/definitions/patch_policy'
     post:
+      x-explorer-enabled: true
       tags:
       - patchpolicies
       summary: Create a new patch policy associated with a patch software title configuration ID
@@ -10196,6 +10331,7 @@ paths:
           schema:
             $ref: '#/definitions/patch_software_title'
     put:
+      x-explorer-enabled: true
       tags:
       - patchsoftwaretitles
       summary: Updates a patch software title by ID
@@ -10218,6 +10354,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - patchsoftwaretitles
       summary: Creates new patch software title by ID
@@ -10291,6 +10428,7 @@ paths:
           schema:
             $ref: '#/definitions/peripheral'
     put:
+      x-explorer-enabled: true
       tags:
       - peripherals
       summary: Updates an existing peripheral by ID
@@ -10310,6 +10448,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - peripherals
       summary: Creates a new peripheral by ID
@@ -10404,6 +10543,7 @@ paths:
           schema:
             $ref: '#/definitions/peripheral_type'
     put:
+      x-explorer-enabled: true
       tags:
       - peripheraltypes
       summary: Updates an existing peripheral by ID
@@ -10423,6 +10563,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - peripheraltypes
       summary: Creates a new peripheral by ID
@@ -10492,6 +10633,7 @@ paths:
           schema:
             $ref: '#/definitions/policy'
     put:
+      x-explorer-enabled: true
       tags:
       - policies
       summary: Updates an existing policy by ID
@@ -10511,6 +10653,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - policies
       summary: Creates a new policy by ID
@@ -10590,6 +10733,7 @@ paths:
           schema:
             $ref: '#/definitions/policy'
     put:
+      x-explorer-enabled: true
       tags:
       - policies
       summary: Updates an existing policy by name
@@ -10724,6 +10868,7 @@ paths:
           schema:
             $ref: '#/definitions/printer'
     put:
+      x-explorer-enabled: true
       tags:
       - printers
       summary: Updates an existing printer by ID
@@ -10743,6 +10888,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - printers
       summary: Creates a new printer by ID
@@ -10797,6 +10943,7 @@ paths:
           schema:
             $ref: '#/definitions/printer'
     put:
+      x-explorer-enabled: true
       tags:
       - printers
       summary: Updates an existing printer by name
@@ -10865,6 +11012,7 @@ paths:
           schema:
             $ref: '#/definitions/removable_mac_address'
     put:
+      x-explorer-enabled: true
       tags:
       - removablemacaddresses
       summary: Updates an existing removable Mac address by ID
@@ -10884,6 +11032,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - removablemacaddresses
       summary: Creates a new removable Mac address by ID
@@ -10938,6 +11087,7 @@ paths:
           schema:
             $ref: '#/definitions/removable_mac_address'
     put:
+      x-explorer-enabled: true
       tags:
       - removablemacaddresses
       summary: Updates an existing removable Mac address by name
@@ -11006,6 +11156,7 @@ paths:
           schema:
             $ref: '#/definitions/restricted_software'
     put:
+      x-explorer-enabled: true
       tags:
       - restrictedsoftware
       summary: Updates an existing restricted software by ID
@@ -11025,6 +11176,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - restrictedsoftware
       summary: Creates a new restricted software by ID
@@ -11079,6 +11231,7 @@ paths:
           schema:
             $ref: '#/definitions/restricted_software'
     put:
+      x-explorer-enabled: true
       tags:
       - restrictedsoftware
       summary: Updates an existing restricted software by name
@@ -11202,6 +11355,7 @@ paths:
           schema:
             $ref: '#/definitions/script'
     put:
+      x-explorer-enabled: true
       tags:
       - scripts
       summary: Updates an existing script by ID
@@ -11222,6 +11376,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - scripts
       summary: Creates a new script by ID
@@ -11278,6 +11433,7 @@ paths:
           schema:
             $ref: '#/definitions/script'
     put:
+      x-explorer-enabled: true
       tags:
       - scripts
       summary: Updates an existing script by name
@@ -11347,6 +11503,7 @@ paths:
           schema:
             $ref: '#/definitions/site'
     put:
+      x-explorer-enabled: true
       tags:
       - sites
       summary: Updates an existing site by ID
@@ -11366,6 +11523,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - sites
       summary: Creates a new site by ID
@@ -11420,6 +11578,7 @@ paths:
           schema:
             $ref: '#/definitions/site'
     put:
+      x-explorer-enabled: true
       tags:
       - sites
       summary: Updates an existing site by name
@@ -11468,6 +11627,7 @@ paths:
           schema:
             $ref: '#/definitions/smtp_server'
     put:
+      x-explorer-enabled: true
       tags:
       - smtpserver
       summary: Updates the Jamf Pro SMTP server information
@@ -11518,6 +11678,7 @@ paths:
           schema:
             $ref: '#/definitions/software_update_server'
     put:
+      x-explorer-enabled: true
       tags:
       - softwareupdateservers
       summary: Updates an existing software update server by ID
@@ -11537,6 +11698,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - softwareupdateservers
       summary: Creates a new software update server by ID
@@ -11591,6 +11753,7 @@ paths:
           schema:
             $ref: '#/definitions/software_update_server'
     put:
+      x-explorer-enabled: true
       tags:
       - softwareupdateservers
       summary: Updates an existing software update server by name
@@ -11659,6 +11822,7 @@ paths:
           schema:
             $ref: '#/definitions/user_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - userextensionattributes
       summary: Updates an existing user extension attribute by ID
@@ -11678,6 +11842,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - userextensionattributes
       summary: Creates a new user extension attribute by ID
@@ -11732,6 +11897,7 @@ paths:
           schema:
             $ref: '#/definitions/user_extension_attribute'
     put:
+      x-explorer-enabled: true
       tags:
       - userextensionattributes
       summary: Updates an existing user extension attribute by name
@@ -11800,6 +11966,7 @@ paths:
           schema:
             $ref: '#/definitions/user_group'
     put:
+      x-explorer-enabled: true
       tags:
       - usergroups
       summary: Updates user groups by ID
@@ -11820,6 +11987,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - usergroups
       summary: Creates user groups by ID
@@ -11874,6 +12042,7 @@ paths:
           schema:
             $ref: '#/definitions/user_group'
     put:
+      x-explorer-enabled: true
       tags:
       - usergroups
       summary: Updates user groups by name
@@ -11943,6 +12112,7 @@ paths:
           schema:
             $ref: '#/definitions/user'
     put:
+      x-explorer-enabled: true
       tags:
       - users
       summary: Updates an existing user by ID
@@ -11963,6 +12133,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - users
       summary: Creates a new user by ID
@@ -12018,6 +12189,7 @@ paths:
           schema:
             $ref: '#/definitions/user'
     put:
+      x-explorer-enabled: true
       tags:
       - users
       summary: Updates an existing user by name
@@ -12073,6 +12245,7 @@ paths:
           schema:
             $ref: '#/definitions/user'
     put:
+      x-explorer-enabled: true
       tags:
       - users
       summary: Updates an existing user by email address
@@ -12141,6 +12314,7 @@ paths:
           schema:
             $ref: '#/definitions/vpp_account'
     put:
+      x-explorer-enabled: true
       tags:
       - vppaccounts
       summary: Updates a VPP account by ID
@@ -12161,6 +12335,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - vppaccounts
       summary: Creates a new VPP account by ID
@@ -12231,6 +12406,7 @@ paths:
           schema:
             $ref: '#/definitions/vpp_assignment'
     put:
+      x-explorer-enabled: true
       tags:
       - vppassignments
       summary: Updates a VPP assignment by ID
@@ -12250,6 +12426,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - vppassignments
       summary: Creates a new VPP assignment by ID
@@ -12319,6 +12496,7 @@ paths:
           schema:
             $ref: '#/definitions/vpp_invitation'
     put:
+      x-explorer-enabled: true
       tags:
       - vppinvitations
       summary: Updates a VPP invitation by ID
@@ -12339,6 +12517,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - vppinvitations
       summary: Creates a new VPP invitation by ID
@@ -12434,6 +12613,7 @@ paths:
           schema:
             $ref: '#/definitions/webhook'
     put:
+      x-explorer-enabled: true
       tags:
       - webhooks
       summary: Updates an existing webhook by ID
@@ -12454,6 +12634,7 @@ paths:
         '201':
           description: Created
     post:
+      x-explorer-enabled: true
       tags:
       - webhooks
       summary: Creates a new webhook by ID
@@ -12509,6 +12690,7 @@ paths:
           schema:
             $ref: '#/definitions/webhook'
     put:
+      x-explorer-enabled: true
       tags:
       - webhooks
       summary: Updates an existing webhook by name
@@ -13183,6 +13365,7 @@ definitions:
     required:
     - name
   class_post:
+      x-explorer-enabled: true
     title: class
     xml:
       name: class
@@ -13436,6 +13619,7 @@ definitions:
                 type: string
                 example: C02Q7KHTGFWF
   computer_command_post:
+      x-explorer-enabled: true
     xml:
       name: computer_command
     type: object
@@ -13618,6 +13802,7 @@ definitions:
         required:
           - name
   computer_configuration_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: computer_configuration
@@ -13783,6 +13968,7 @@ definitions:
                   type: string
                   example: C02Q7KHTGFWF
   computer_group_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: computer_group
@@ -14674,6 +14860,7 @@ definitions:
             type: string
             example: 1499470624555
   computer_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: computer
@@ -15511,6 +15698,7 @@ definitions:
       - read_only_username
       - read_write_username
   distribution_point_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: distribution_point
@@ -15989,6 +16177,7 @@ definitions:
           notification_message:
             type: string
   ebook_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: ebook
@@ -16581,6 +16770,7 @@ definitions:
               user_group_membership_use_ldap_compare:
                 type: boolean
   ldap_server_post:
+      x-explorer-enabled: true
     type: object
     properties:
       connection:
@@ -17269,6 +17459,7 @@ definitions:
         required:
           - name
   managed_preference_profile_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: managed_preference_profile
@@ -17662,6 +17853,7 @@ definitions:
               type: string
               example: Sample Value
   mobile_device_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: mobile_device
@@ -18119,6 +18311,7 @@ definitions:
             internal_app:
               type: boolean
   mobile_device_command_post:
+      x-explorer-enabled: true
     xml: 
       name: mobile_device_command
     type: object
@@ -18622,6 +18815,7 @@ definitions:
             attachment:
               $ref: '#/definitions/attachment'
   mobile_device_enrollment_profile_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: mobile_device_enrollment_profile
@@ -19144,6 +19338,7 @@ definitions:
       site:
         $ref: '#/definitions/site_object'
   mobile_device_invitation_post:
+      x-explorer-enabled: true
     type: object
     properties:
       id:
@@ -19390,6 +19585,7 @@ definitions:
       - name
       - ip_address
   netboot_server_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: netboot_server
@@ -19466,6 +19662,7 @@ definitions:
       - starting_address
       - ending_address
   network_segment_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: network_segment
@@ -20347,6 +20544,7 @@ definitions:
             attachment:
               $ref: '#/definitions/attachment'
   peripheral_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: peripheral
@@ -21076,6 +21274,7 @@ definitions:
             example: 1
             description: disk encryption ID to utilize for remediating institutional recovery key types.
   policy_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: policy
@@ -21818,6 +22017,7 @@ definitions:
     required:
       - name
   user_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: user
@@ -22020,6 +22220,7 @@ definitions:
                     user_group:
                       $ref: '#/definitions/id_name'
   vpp_assignment_post:
+      x-explorer-enabled: true
     type: object
     xml:
       name: vpp_assignment
