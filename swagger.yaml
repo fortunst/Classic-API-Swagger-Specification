@@ -12744,9 +12744,6 @@ definitions:
         type: string
         example: John Smith
         description: Name of the account
-      password:
-        type: string
-        writeOnly: true
       directory_user:
         type: boolean
       full_name:
