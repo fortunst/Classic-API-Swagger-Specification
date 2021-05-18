@@ -2104,7 +2104,7 @@ paths:
     get:
       tags:
       - computerextensionattributes
-      description: Finds all computer extension attributes
+      summary: Finds all computer extension attributes
       operationId: findComputerextensionattributes
       parameters: []
       produces:
