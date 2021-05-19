@@ -1836,6 +1836,7 @@ paths:
       operationId: createComputerCommandByCommand
       description: |
         The chart below includes additional requirements for usage of specific commands
+        
         | command | Parameter | Requirements |
         | ------- | --------- | ------------ |
         | DeleteUser | user_name | DEP enrolled device and user_name value (string) |
