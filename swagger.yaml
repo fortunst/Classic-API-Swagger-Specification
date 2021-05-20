@@ -67,11 +67,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/group'
       responses:
         '201':
           description: Created
@@ -89,12 +84,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Group name
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/group'
       responses:
         '201':
           description: Created
@@ -147,11 +136,6 @@ paths:
         name: name
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/group'
       responses:
         '201':
           description: Created
@@ -203,11 +187,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/account'
       responses:
         '201':
           description: Created
@@ -224,12 +203,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Account name
-        in: body
-        name: body
-        required: true
-        schema:
-         "$ref": "#/definitions/account"
       responses:
         '201':
           description: Created
@@ -281,11 +254,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/account'
       responses:
         '201':
           description: Created
@@ -384,11 +352,6 @@ paths:
           name: id
           required: true
           type: integer
-        - in: body
-          name: body
-          required: true
-          schema:
-            $ref: '#/definitions/advanced_computer_search'
       responses:
         '201':
           description: Created
@@ -405,12 +368,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Name of object
-        in: body
-        name: body
-        required: true
-        schema:
-         "$ref": "#/definitions/advanced_computer_search"
       responses:
         '201':
           description: Created
@@ -460,11 +417,6 @@ paths:
           name: name
           required: true
           type: string
-        - in: body
-          name: body
-          required: true
-          schema:
-            $ref: '#/definitions/advanced_computer_search'
       responses:
         '201':
           description: Created
@@ -529,11 +481,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_mobile_device_search'
       responses:
         '201':
           description: Created
@@ -550,12 +497,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Name of advanced mobile device search
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_mobile_device_search'
       responses:
         '201':
           description: Created
@@ -605,11 +546,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_mobile_device_search'
       responses:
         '201':
           description: Created
@@ -674,11 +610,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_user_search'
       responses:
         '200':
           description: OK
@@ -695,12 +626,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - description: Name of advanced user search
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_user_search'
       responses:
         '201':
           description: Created
@@ -750,11 +675,6 @@ paths:
         required: true
         type: string
         description: Name to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/advanced_user_search'
       responses:
         '200':
           description: OK
@@ -820,12 +740,6 @@ paths:
         type: integer
         description: Database ID of the extension
         default: 0
-      - description: Name of advanced user search
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/allowed_file_extension'
       responses:
         '201':
           description: Created
@@ -910,11 +824,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/building'
       responses:
         '201':
           description: Created
@@ -931,12 +840,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Name of building
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/building'
       responses:
         '201':
           description: Created
@@ -986,11 +889,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/building'
       responses:
         '201':
           description: Created
@@ -1055,11 +953,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/byoprofile'
       responses:
         '201':
           description: Created
@@ -1076,11 +969,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/byoprofile'
       responses:
         '201':
           description: Created
@@ -1131,11 +1019,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/byoprofile'
       responses:
         '201':
           description: Created
@@ -1200,11 +1083,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/category'
       responses:
         '200':
           description: OK
@@ -1221,12 +1099,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Name of category
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/category'
       responses:
         '201':
           description: Created
@@ -1276,11 +1148,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/category'
       responses:
         '200':
           description: OK
@@ -1346,11 +1213,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/class_post'
       responses:
         200:
           description: OK
@@ -1368,12 +1230,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Class name
-        schema:
-          $ref: '#/definitions/class_post'
       responses:
         201:
           description: Created
@@ -1424,11 +1280,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/class_post'
       responses:
         200:
           description: OK
@@ -1855,12 +1706,6 @@ paths:
         required: true
         type: string
         enum: [BlankPush, DeleteUser, DeviceLock, DisableRemoteDesktop, EnableRemoteDesktop, EraseDevice, ScheduleOSUpdate, SettingsDisableBluetooth, SettingsEnableBluetooth, UnlockUserAccount, UnmanageDevice]
-      - description: Command to be sent
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_command_post'
       responses:
         '201':
           description: Created
@@ -2001,11 +1846,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_configuration_post'
       responses:
         '201':
           description: Created
@@ -2023,12 +1863,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Name of the configuration
-        schema:
-          $ref: '#/definitions/computer_configuration_post'
       responses:
         '200':
           description: Created
@@ -2079,11 +1913,6 @@ paths:
         required: true
         type: integer
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_configuration_post'
       responses:
         '201':
           description: Created
@@ -2148,11 +1977,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_extension_attribute'
       responses:
         '201':
           description: Created
@@ -2169,12 +1993,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Extension attribute name
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_extension_attribute'
       responses:
         '201':
           description: Created
@@ -2224,11 +2042,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_extension_attribute'
       responses:
         '201':
           description: Created
@@ -2294,11 +2107,6 @@ paths:
         name: id
         required: true
         type: integer
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_group_post'
       responses:
         '201':
           description: Created
@@ -2315,12 +2123,6 @@ paths:
         required: true
         type: integer
         default: 0
-      - description: Name of the group
-        in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_group_post'
       responses:
         '201':
           description: Created
@@ -2371,11 +2173,6 @@ paths:
         name: name
         required: true
         type: string
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_group_post'
       responses:
         '201':
           description: Created
@@ -3941,11 +3738,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -3963,11 +3755,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-            $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -4043,11 +3830,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -4125,11 +3907,6 @@ paths:
         required: true
         type: string
         description: UDID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -4207,11 +3984,6 @@ paths:
         required: true
         type: string
         description: Serial number value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -4289,11 +4061,6 @@ paths:
         required: true
         type: string
         description: MAC address value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/computer_post'
       responses:
         '201':
           description: Created
@@ -4402,11 +4169,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/department'
       responses:
         '201':
           description: Created
@@ -4423,12 +4185,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Department name
-        schema:
-          $ref: '#/definitions/department'
       responses:
         '201':
           description: Created
@@ -4476,11 +4232,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/department'
       responses:
         '201':
           description: Created
@@ -4545,11 +4296,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/directory_binding'
       responses:
         '201':
           description: Created
@@ -4566,11 +4312,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/directory_binding'
       responses:
         '201':
           description: Created
@@ -4620,11 +4361,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/directory_binding'
       responses:
         '201':
           description: Created
@@ -4689,11 +4425,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/disk_encryption_configuration'
       responses:
         '201':
           description: Created
@@ -4710,11 +4441,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/disk_encryption_configuration'
       responses:
         '201':
           description: Created
@@ -4764,11 +4490,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/disk_encryption_configuration'
       responses:
         '201':
           description: Created
@@ -4833,11 +4554,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/distribution_point_post'
       responses:
         '201':
           description: Created
@@ -4854,12 +4570,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Distribution point name
-        schema:
-          $ref: '#/definitions/distribution_point_post'
       responses:
         '201':
           description: Created
@@ -4909,11 +4619,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/distribution_point_post'
       responses:
         '201':
           description: Created
@@ -4978,11 +4683,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/dock_item'
       responses:
         '201':
           description: Created
@@ -4999,12 +4699,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Dock item name
-        schema:
-          $ref: '#/definitions/dock_item'
       responses:
         '201':
           description: Created
@@ -5054,11 +4748,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/dock_item'
       responses:
         '201':
           description: Created
@@ -5123,11 +4812,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ebook_post'
       responses:
         '201':
           description: Created
@@ -5144,12 +4828,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Ebook name
-        schema:
-          $ref: '#/definitions/ebook_post'
       responses:
         '201':
           description: Created
@@ -5224,11 +4902,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ebook_post'
       responses:
         '201':
           description: Created
@@ -5383,11 +5056,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/healthcare_listener'
       responses:
         '201':
           description: Created
@@ -5440,11 +5108,6 @@ paths:
         required: true
         type: string
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/healthcare_listener_rule'
       responses:
         '201':
           description: Created
@@ -5463,11 +5126,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/healthcare_listener_rule'
       responses:
         '200':
           description: Created
@@ -5518,11 +5176,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ibeacon'
       responses:
         '201':
           description: Created
@@ -5539,12 +5192,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Name of the iBeacon
-        schema:
-          $ref: '#/definitions/ibeacon'
       responses:
         '201':
           description: Created
@@ -5594,11 +5241,6 @@ paths:
         required: true
         type: string
         description: Name to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ibeacon'
       responses:
         '201':
           description: Created
@@ -5663,11 +5305,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/infrastructure_manager'
       responses:
         '201':
           description: Created
@@ -5737,11 +5374,6 @@ paths:
         required: true
         type: string
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/json_web_token_configuration'
       responses:
         '201':
           description: Created
@@ -5826,11 +5458,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ldap_server_post'
       responses:
         '201':
           description: Created
@@ -5847,12 +5474,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: LDAP server name
-        schema:
-          $ref: '#/definitions/ldap_server_post'
       responses:
         '201':
           description: Created
@@ -5977,11 +5598,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/ldap_server_post'
       responses:
         '201':
           description: Created
@@ -6124,11 +5740,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/licensed_software'
       responses:
         '201':
           description: Created
@@ -6146,12 +5757,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        description: Licensed software name
-        schema:
-          $ref: '#/definitions/licensed_software'
       responses:
         '201':
           description: Created
@@ -6202,11 +5807,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/licensed_software'
       responses:
         '201':
           description: Created
@@ -6334,11 +5934,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mac_application'
       responses:
         '201':
           description: Created
@@ -6356,11 +5951,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mac_application'
       responses:
         '201':
           description: Created
@@ -6436,11 +6026,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mac_application'
       responses:
         '201':
           description: Created
@@ -6532,11 +6117,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/managed_preference_profile_post'
       responses:
         '201':
           description: Created
@@ -6553,11 +6133,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/managed_preference_profile_post'
       responses:
         '201':
           description: Created
@@ -6632,11 +6207,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/managed_preference_profile_post'
       responses:
         '201':
           description: Created
@@ -6729,11 +6299,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_application'
       responses:
         '201':
           description: Created
@@ -6751,11 +6316,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_application'
       responses:
         '201':
           description: Created
@@ -6806,11 +6366,6 @@ paths:
         required: true
         type: string
         description: Bundle ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_application'
       responses:
         '201':
           description: Created
@@ -6870,11 +6425,6 @@ paths:
         required: true
         type: string
         description: Version to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_application'
       responses:
         '201':
           description: Created
@@ -6954,11 +6504,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_application'
       responses:
         '201':
           description: Created
@@ -7302,11 +6847,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_configuration_profile'
       responses:
         '201':
           description: Created
@@ -7323,11 +6863,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_configuration_profile'
       responses:
         '201':
           description: Created
@@ -7402,11 +6937,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_configuration_profile'
       responses:
         '201':
           description: Created
@@ -7498,11 +7028,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_enrollment_profile_post'
       responses:
         '201':
           description: Created
@@ -7519,11 +7044,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_enrollment_profile_post'
       responses:
         '201':
           description: Created
@@ -7573,11 +7093,6 @@ paths:
         required: true
         type: string
         description: Invitation value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_enrollment_profile_post'
       responses:
         '201':
           description: Created
@@ -7652,11 +7167,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_enrollment_profile'
       responses:
         '201':
           description: Created
@@ -7748,11 +7258,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_extension_attribute'
       responses:
         '201':
           description: Created
@@ -7769,11 +7274,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_extension_attribute'
       responses:
         '201':
           description: Created
@@ -7823,11 +7323,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_extension_attribute'
       responses:
         '201':
           description: Created
@@ -7893,11 +7388,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_group'
       responses:
         '201':
           description: Created
@@ -7914,11 +7404,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_group'
       responses:
         '201':
           description: Created
@@ -7969,11 +7454,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_group'
       responses:
         '201':
           description: Created
@@ -8416,11 +7896,6 @@ paths:
         name: id
         required: true
         type: integer
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_provisioning_profile'
       produces:
       - application/xml
       responses:
@@ -8492,11 +7967,6 @@ paths:
         name: name
         required: true
         type: string
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_provisioning_profile'
       produces:
       - application/xml
       responses:
@@ -8568,11 +8038,6 @@ paths:
         name: uuid
         required: true
         type: string
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_provisioning_profile'
       produces:
       - application/xml
       responses:
@@ -8662,11 +8127,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -8684,11 +8144,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -8764,11 +8219,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -8846,11 +8296,6 @@ paths:
         required: true
         type: string
         description: UDID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -8928,11 +8373,6 @@ paths:
         required: true
         type: string
         description: Serial number value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -9010,11 +8450,6 @@ paths:
         required: true
         type: string
         description: Mac address value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/mobile_device_post'
       responses:
         '201':
           description: Created
@@ -9106,11 +8541,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/netboot_server'
       responses:
         '201':
           description: Created
@@ -9127,11 +8557,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/netboot_server_post'
       responses:
         '201':
           description: Created
@@ -9181,11 +8606,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/netboot_server'
       responses:
         '201':
           description: Created
@@ -9250,11 +8670,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/network_segment_post'
       responses:
         '201':
           description: Created
@@ -9271,11 +8686,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/network_segment_post'
       responses:
         '201':
           description: Created
@@ -9325,11 +8735,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/network_segment_post'
       responses:
         '201':
           description: Created
@@ -9394,11 +8799,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/os_x_configuration_profile'
       responses:
         '201':
           description: Created
@@ -9415,11 +8815,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/os_x_configuration_profile'
       responses:
         '201':
           description: Created
@@ -9494,11 +8889,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/os_x_configuration_profile'
       responses:
         '201':
           description: Created
@@ -9590,11 +8980,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/package'
       responses:
         '201':
           description: Created
@@ -9611,11 +8996,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/package'
       responses:
         '201':
           description: Created
@@ -9665,11 +9045,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/package'
       responses:
         '201':
           description: Created
@@ -9758,11 +9133,6 @@ paths:
         required: true
         type: integer
         description: ID value to update by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_management_software_title'
       responses:
         '201':
           description: Created
@@ -9779,12 +9149,6 @@ paths:
         in: path
         required: true
         type: string
-      - name: body
-        in: body
-        required: true
-        description: Patch Software Title to create within a site
-        schema:
-          $ref: '#/definitions/patch_management_software_title'
       responses:
         '201':
           description: created
@@ -9863,11 +9227,6 @@ paths:
         required: true
         type: string
         description: Name value to update by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_management_software_title'
       responses:
         '201':
           description: Created
@@ -9960,11 +9319,6 @@ paths:
         required: true
         type: string
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_external_source'
       responses:
         '200':
           description: Created
@@ -9983,11 +9337,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_external_source'
       responses:
         '200':
           description: Created
@@ -10041,11 +9390,6 @@ paths:
         required: true
         type: string
         description: Name to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_external_source'
       responses:
         '200':
           description: Created
@@ -10063,11 +9407,6 @@ paths:
         required: true
         type: string
         description: Name to filter by
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_external_source'
       responses:
         '200':
           description: Created
@@ -10172,11 +9511,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_policy'
       responses:
         '201':
           description: Created
@@ -10254,11 +9588,6 @@ paths:
         required: true
         type: integer
         description: Patch software title config ID value to filter by
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_policy'
       responses:
         '201':
           description: Created
@@ -10356,11 +9685,6 @@ paths:
         required: true
         type: string
         description: ID value to update by
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_software_title'
       responses:
         '201':
           description: Created
@@ -10378,11 +9702,6 @@ paths:
         required: true
         type: string
         description: ID value to filter by
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/patch_software_title'
       responses:
         '201':
           description: Created
@@ -10450,11 +9769,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/peripheral_post'
       responses:
         '201':
           description: Created
@@ -10471,11 +9785,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/peripheral_post'
       responses:
         '201':
           description: Created
@@ -10565,11 +9874,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/peripheral_post'
       responses:
         '201':
           description: Created
@@ -10586,11 +9890,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/peripheral_type'
       responses:
         '201':
           description: Created
@@ -10655,11 +9954,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/policy_post'
       responses:
         '201':
           description: Created
@@ -10676,11 +9970,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/policy_post'
       responses:
         '201':
           description: Created
@@ -10755,11 +10044,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/policy_post'
       responses:
         '201':
           description: Created
@@ -10890,11 +10174,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/printer'
       responses:
         '201':
           description: Created
@@ -10911,11 +10190,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/printer'
       responses:
         '201':
           description: Created
@@ -10965,11 +10239,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/printer'
       responses:
         '201':
           description: Created
@@ -11034,11 +10303,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/removable_mac_address'
       responses:
         '201':
           description: Created
@@ -11055,11 +10319,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/removable_mac_address'
       responses:
         '201':
           description: Created
@@ -11109,11 +10368,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/removable_mac_address'
       responses:
         '201':
           description: Created
@@ -11178,11 +10432,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/restricted_software'
       responses:
         '201':
           description: Created
@@ -11199,11 +10448,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/restricted_software'
       responses:
         '201':
           description: Created
@@ -11253,11 +10497,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/restricted_software'
       responses:
         '201':
           description: Created
@@ -11378,11 +10617,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/script'
       responses:
         '201':
           description: Created
@@ -11400,11 +10634,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/script'
       responses:
         '201':
           description: Created
@@ -11456,11 +10685,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/script'
       responses:
         '201':
           description: Created
@@ -11525,11 +10749,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/site'
       responses:
         '201':
           description: Created
@@ -11546,11 +10765,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/site'
       responses:
         '201':
           description: Created
@@ -11600,11 +10814,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/site'
       responses:
         '201':
           description: Created
@@ -11700,11 +10909,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/software_update_server'
       responses:
         '201':
           description: Created
@@ -11721,11 +10925,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/software_update_server'
       responses:
         '201':
           description: Created
@@ -11775,11 +10974,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/software_update_server'
       responses:
         '201':
           description: Created
@@ -11844,11 +11038,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_extension_attribute'
       responses:
         '201':
           description: Created
@@ -11865,11 +11054,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_extension_attribute'
       responses:
         '201':
           description: Created
@@ -11919,11 +11103,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_extension_attribute'
       responses:
         '201':
           description: Created
@@ -11989,11 +11168,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_group'
       responses:
         '201':
           description: Created
@@ -12010,11 +11184,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_group'
       responses:
         '201':
           description: Created
@@ -12065,11 +11234,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_group'
       responses:
         '201':
           description: Created
@@ -12135,11 +11299,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_post'
       responses:
         '201':
           description: Created
@@ -12157,11 +11316,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_post'
       responses:
         '201':
           description: Created
@@ -12212,11 +11366,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_post'
       responses:
         '201':
           description: Created
@@ -12267,11 +11416,6 @@ paths:
         required: true
         type: string
         description: Email address value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/user_post'
       responses:
         '201':
           description: Created
@@ -12337,11 +11481,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_account'
       responses:
         '201':
           description: Created
@@ -12359,11 +11498,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_account'
       responses:
         '201':
           description: Created
@@ -12428,11 +11562,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_assignment_post'
       responses:
         '201':
           description: Created
@@ -12449,11 +11578,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_assignment_post'
       responses:
         '201':
           description: Created
@@ -12519,11 +11643,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_invitation'
       responses:
         '201':
           description: Created
@@ -12541,11 +11660,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/vpp_invitation'
       responses:
         '201':
           description: Created
@@ -12636,11 +11750,6 @@ paths:
         required: true
         type: integer
         description: ID value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/webhook'
       responses:
         '201':
           description: Created
@@ -12658,11 +11767,6 @@ paths:
         type: integer
         description: ID value to filter by
         default: 0
-      - name: body
-        in: body
-        required: true
-        schema:
-          $ref: '#/definitions/webhook'
       responses:
         '201':
           description: Created
@@ -12712,11 +11816,6 @@ paths:
         required: true
         type: string
         description: Name value to filter by
-      - in: body
-        name: body
-        required: true
-        schema:
-          $ref: '#/definitions/webhook'
       responses:
         '201':
           description: Created
