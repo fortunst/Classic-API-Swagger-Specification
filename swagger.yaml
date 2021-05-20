@@ -4948,7 +4948,6 @@ paths:
             $ref: '#/definitions/ebook'
   "/fileuploads/{resource}/{idType}/{id}":
     post:
-      x-explorer-enabled: false
       tags:
       - fileuploads
       summary: Creates file attachments in Jamf Pro
