@@ -9381,7 +9381,7 @@ paths:
       x-explorer-enabled: false
       tags:
       - patchexternalsources
-      summary: Updates a patch external source by ID
+      summary: Updates a patch external source by name
       operationId: updatePatchExternalSourcesByName
       produces:
       - application/xml
@@ -9398,7 +9398,7 @@ paths:
       x-explorer-enabled: false
       tags:
       - patchexternalsources
-      summary: Create a new patch external source by ID
+      summary: Create a new patch external source by name
       operationId: createPatchExternalSourcesByName
       produces:
       - application/xml
