@@ -6631,6 +6631,7 @@ paths:
       operationId: createMobileDeviceCommand
       description: |
         The chart below includes additional requirements for usage of specific commands
+        
         | command | Parameters | Requirements | Values |
         | ---------- | ------- | ------------ | ------ |
         | DeviceName | device_name | Supervised Device | string |
@@ -6676,6 +6677,7 @@ paths:
       operationId: createMobileDeviceCommandURL
       description: |
         The chart below includes additional requirements for usage of specific commands
+        
         | command | Parameters | Requirements | Values |
         | ---------- | ------- | ------------ | ------ |
         | DeviceLocation | N/A | Supervised and in lost mode | N/A |
