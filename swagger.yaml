@@ -6572,7 +6572,7 @@ paths:
     get:
       tags:
       - mobiledevicecommands
-      summary: Finds a mobile device command by UUDI
+      summary: Finds a mobile device command by UUID
       operationId: findMobileDeviceCommandsByUuid
       parameters:
       - name: uuid
