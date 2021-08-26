@@ -22,6 +22,7 @@ x-readme:
   - swift
   - ruby
   - python
+  explorer-enabled: false
 paths:
   "/accounts":
     get:
