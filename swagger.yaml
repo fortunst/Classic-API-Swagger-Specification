@@ -1,12 +1,12 @@
 swagger: '2.0'
 info:
-  version: '10.31.0'
+  version: '10.32.0'
   title: Classic API
   license:
     name: Jamf API License Agreement
     url: 'https://www.jamf.com/developer-resources/api-license-agreement/'
   description: This is a sample Jamf Pro server which allows for usage without any authentication. See [Classic API Documentation](https://developer.jamf.com/documentation "Classic API Documentation") for more information on supported authentication methods. For security purposes, you are prevented from interacting with the `accounts` or `activationcode` endpoints.
-host: api.jamfcloud.com
+host: yourServer.jamfcloud.com
 basePath: /JSSResource
 schemes:
   - https
