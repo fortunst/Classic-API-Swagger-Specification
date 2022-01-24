@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: '10.35.0'
+  version: '10.36.0'
   title: Classic API
   license:
     name: Jamf API License Agreement
@@ -1805,138 +1805,6 @@ paths:
       responses:
         '201':
           description: Created
-  "/computerconfigurations":
-    get:
-      tags:
-      - computerconfigurations
-      summary: Finds all computer configurations
-      operationId: findComputerConfigurations
-      parameters: []
-      produces:
-      - application/xml
-      - application/json
-      responses:
-        '200':
-          description: OK
-          schema:
-            $ref: '#/definitions/computer_configurations'
-  "/computerconfigurations/id/{id}":
-    get:
-      tags:
-      - computerconfigurations
-      summary: Finds computer configurations by ID
-      operationId: findComputerConfigurationsById
-      parameters:
-      - name: id
-        in: path
-        required: true
-        type: integer
-        description: ID value to filter by
-      produces:
-      - application/xml
-      - application/json
-      responses:
-        '200':
-          description: OK
-          schema:
-            $ref: '#/definitions/computer_configuration'
-    put:
-      x-explorer-enabled: false
-      tags:
-      - computerconfigurations
-      summary: Updates an existing computer configuration by ID
-      description: Referenced packages, scripts, printers and directory bindings must be created prior to use in this operation.
-      operationId: updateComputerConfigurationById
-      parameters:
-      - name: id
-        in: path
-        required: true
-        type: integer
-        description: ID value to filter by
-      responses:
-        '201':
-          description: Created
-    post:
-      x-explorer-enabled: false
-      tags:
-      - computerconfigurations
-      summary: Creates a new computer configuration by ID
-      description: Referenced packages, scripts, printers and directory bindings must be created prior to use in this operation.
-      operationId: createComputerConfigurationById
-      parameters:
-      - name: id
-        in: path
-        required: true
-        type: integer
-        description: ID value to filter by
-        default: 0
-      responses:
-        '200':
-          description: Created
-    delete:
-      tags:
-      - computerconfigurations
-      summary: Deletes a computer configuration by ID
-      operationId: deleteComputerConfigurationById
-      parameters:
-      - name: id
-        in: path
-        required: true
-        type: integer
-        description: ID value to filter by
-      responses:
-        '200':
-          description: OK
-  "/computerconfigurations/name/{name}":
-    get:
-      tags:
-      - computerconfigurations
-      summary: Finds computer configurations by name
-      operationId: findComputerConfigurationsByName
-      parameters:
-      - name: name
-        in: path
-        required: true
-        type: string
-        description: Name to filter by
-      produces:
-      - application/xml
-      - application/json
-      responses:
-        '200':
-          description: OK
-          schema:
-            $ref: '#/definitions/computer_configuration'
-    put:
-      x-explorer-enabled: false
-      tags:
-      - computerconfigurations
-      summary: Updates an existing computer configuration by name
-      description: Referenced packages, scripts, printers and directory bindings must be created prior to use in this operation.
-      operationId: updateComputerConfigurationByName
-      parameters:
-      - name: name
-        in: path
-        required: true
-        type: integer
-        description: Name value to filter by
-      responses:
-        '201':
-          description: Created
-    delete:
-      tags:
-      - computerconfigurations
-      summary: Deletes a computer configuration by name
-      operationId: deleteComputerConfigurationByName
-      parameters:
-      - name: name
-        in: path
-        required: true
-        type: integer
-        description: Name value to filter by
-      responses:
-        '200':
-          description: OK
   "/computerextensionattributes":
     get:
       tags:
@@ -12687,168 +12555,6 @@ definitions:
                       users:
                         type: string
                         example: Username
-  computer_configuration:
-    type: object
-    properties:
-      general:
-        type: object
-        properties:
-          id:
-            type: integer
-            example: 1
-          name:
-            description: Configuration name
-            type: string
-            example: High Sierra Base OS
-          description:
-            type: string
-          type:
-            type: string
-            enum: [Standard, Smart]
-            description: Type of configuration
-          parent:
-            type: string
-            description: Name of the parent configuration (for Smart configurations)
-          packages:
-            type: array
-            items:
-              type: object
-              properties:
-                package:
-                  $ref: '#/definitions/package'
-          scripts:
-            type: array
-            items:
-              type: object
-              properties:
-                script:
-                  $ref: '#/definitions/script'
-          printers:
-            type: array
-            items:
-              type: object
-              properties:
-                printer:
-                  $ref: '#/definitions/printer'
-          directory_bindings:
-            type: array
-            items:
-              type: object
-              properties:
-                directory_binding:
-                  $ref: '#/definitions/directory_binding'
-          management:
-            type: object
-            properties:
-              username:
-                type: string
-                example: casperadministrator
-                description: Username of the management account
-              password:
-                type: string
-                description: Password of the management account
-              create_account:
-                type: boolean
-              hide_account:
-                type: boolean
-              allow_ssh_for_management_only:
-                type: boolean
-          homepage:
-            type: string
-            example: https://www.jamf.com
-          partitions:
-            type: object
-            properties:
-              partition:
-                properties:
-                  name:
-                    type: string
-                    example: Macintosh HD
-                    description: Name of additional partition
-                  size_gb:
-                    type: integer
-                  maximum_percentage:
-                    type: integer
-                    description: Maximum percentage of space to allow the partition to take up on the target drive
-                  format:
-                    type: string
-                    example: Journaled HFS+
-                    description: Format to use for the partition
-                  is_restore_partition:
-                    type: boolean
-                  computer_configuration:
-                    type: string
-                    example: Recovery HD
-                    description: Configuration to use to image the partition
-                  reimage:
-                    type: boolean
-                  append_to_name:
-                    type: string
-                    example: Lab-100
-                    description: Text to append to the computer name
-        required:
-          - name
-  computer_configuration_post:
-    type: object
-    xml:
-      name: computer_configuration
-    properties:
-      general:
-        type: object
-        properties:
-          id:
-            type: integer
-          name:
-            description: Configuration name
-            type: string
-            example: High Sierra Base OS
-          description:
-            type: string
-          type:
-            type: string
-            enum: [Standard, Smart]
-            description: Type of configuration
-          management:
-            type: object
-            properties:
-              username:
-                type: string
-                example: casperadministrator
-                description: Username of the management account
-              password:
-                type: string
-                description: Password of the management account
-                example: password
-              create_account:
-                type: boolean
-                default: false
-              hide_account:
-                type: boolean
-                default: false
-              allow_ssh_for_management_only:
-                type: boolean
-                default: false
-        required:
-          - name
-  computer_configurations:
-    type: array
-    items:
-      type: object
-      properties:
-        size:
-          $ref: '#/definitions/size'
-        computer_configuration:
-          type: object
-          properties:
-            id:
-              type: integer
-              example: 1
-            name:
-              description: Configuration name
-              type: string
-              example: 10.12 Base OS
-          required:
-            - name
   computer_extension_attribute:
     type: object
     properties:
@@ -14002,8 +13708,6 @@ definitions:
           distribution_point:
             type: string
           sus:
-            type: string
-          netboot_server:
             type: string
           site:
             $ref: '#/definitions/site_object'
@@ -18515,87 +18219,6 @@ definitions:
             username:
               type: string
               example: Kathy
-  netboot_server:
-    type: object
-    properties:
-      id:
-        type: integer
-        example: 1
-      name:
-        type: string
-        example: LA Netboot
-        description: Name of the netboot server
-      ip_address:
-        type: string
-        example: 10.10.1.2
-        description: IP address of the server
-      default_image:
-        type: boolean
-        default: true
-      specific_image:
-        type: boolean
-        default: false
-      target_platform:
-        type: string
-        enum: [PowerPC, Intel/x86]
-        default: PowerPC
-      share_point:
-        type: string
-      set:
-        type: string
-      image:
-        type: string
-      protocol:
-        type: string
-        enum: [nfs, http]
-        default: nfs
-      configure_manually:
-        type: boolean
-      boot_args:
-        type: string
-      boot_file:
-        type: string
-      boot_device:
-        type: string
-    required:
-      - name
-      - ip_address
-  netboot_server_post:
-    type: object
-    xml:
-      name: netboot_server
-    properties:
-      id:
-        type: integer
-      name:
-        type: string
-        example: LA Netboot
-        description: Name of the netboot server
-      ip_address:
-        type: string
-        example: 10.10.1.2
-        description: IP address of the server
-      default_image:
-        type: boolean
-        default: true
-      specific_image:
-        type: boolean
-        default: false
-      target_platform:
-        type: string
-        enum: [PowerPC, Intel/x86]
-        default: PowerPC
-    required:
-      - name
-      - ip_address
-  netboot_servers:
-    type: array
-    items:
-      properties:
-        size:
-          $ref: '#/definitions/size'
-        netboot_server:
-          $ref: '#/definitions/id_name'
   network_segment:
     type: object
     properties:
@@ -18617,8 +18240,6 @@ definitions:
       distribution_point:
         type: string
       url:
-        type: string
-      netboot_server:
         type: string
       swu_server:
         type: string
@@ -19764,8 +19385,6 @@ definitions:
               force_afp_smb:
                 type: boolean
               sus:
-                type: string
-              netboot_server:
                 type: string
           network_requirements:
             type: string
