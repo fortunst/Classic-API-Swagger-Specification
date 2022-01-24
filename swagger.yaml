@@ -18620,8 +18620,6 @@ definitions:
         type: boolean
       fill_existing_users:
         type: boolean
-      boot_volume_required:
-        type: boolean
       allow_uninstalled:
         type: boolean
       os_requirements:
